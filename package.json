@@ -6,8 +6,8 @@
       "express": "https://github.com/visionmedia/express/tarball/master"
     , "jade": "*"
     , "palette": "*"
-    , "redis": "0.7.x"
-    , "canvas": "0.8.x"
-    , "stylus": "0.21.x"
+    , "redis": "0.8.x"
+    , "canvas": "1.x"
+    , "stylus": "0.x"
   }
 }
