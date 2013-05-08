@@ -1,16 +1,27 @@
 # Screenshot application
 
   A simple screenshot application & web service powered by [Express](http://expressjs.com), [Redis](http://redis.io), [node-canvas](http://github.com/learnboost/node-canvas), [palette](http://github.com/visionmedia/palette), and [PhantomJS](http://www.phantomjs.org/).
-  
-  ![rest screenshot web service](http://f.cl.ly/items/3v0V1y290V422J3a2r2o/Grab.png) 
 
-## Setup
+  ![rest screenshot web service](http://f.cl.ly/items/3v0V1y290V422J3a2r2o/Grab.png)
 
-  First [install](http://code.google.com/p/phantomjs/wiki/Installation) phantomjs,
-  then clone this repo and install the deps:
+## Setup OSX
+
+  First, install XQuartz https://xquartz.macosforge.org
 
 ```
-$ git clone https://github.com/visionmedia/screenshot-app.git
+brew install phantomjs
+brew install cairo
+brew install fontconfig
+
+# add PKG_CONFIG_PATH to ~/.bashrc
+export PKG_CONFIG_PATH=/opt/X11/lib/pkgconfig
+
+source ~/.bashrc
+```
+  Then clone this repo and install the deps:
+
+```
+$ git clone https://github.com/simple10/screenshot-app.git
 $ cd screenshot-app
 $ npm install -d
 ```
@@ -34,7 +45,7 @@ Express server listening on port 3000
   - dimensions
   - varnish
 
-## License 
+## License
 
 (The MIT License)
 
